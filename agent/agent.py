@@ -11,6 +11,15 @@ from pathlib import Path
 import pickle
 import gym
 
+# how to import or load local files
+import os
+import sys
+path = os.path.split(os.path.realpath(__file__))[0]
+sys.path.append(path)
+import gym_cfg
+with open(path + "/gym_cfg.py", "r") as f:
+    pass
+
 class TestAgent():
     def __init__(self):
         self.now_phase = {}
