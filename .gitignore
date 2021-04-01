@@ -1,0 +1,6 @@
+agent/__pycache__
+log/*.log
+log/*.json
+out/*.json
+.idea
+.gradle
