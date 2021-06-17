@@ -77,7 +77,7 @@ class Flow:
 
     def generate_traffic(self, numVeh=50000, percentVeh=[.3,.1,.2,.2,.2], weight=0.2):
         '''
-        Generate 1-hour traffic flow data given the road network data 
+        Generate 1 sample traffic flow data given the road network data 
         :param numVeh: total number of vehicles that will enter the network in 1-hour
         :param percentVeh: percentages of vehicles that will enter the network in each period (e.g., in 4-minute)  
         :param weight: the larger the weight, the more diverse of route choice given Origin-Destination of a trip 
