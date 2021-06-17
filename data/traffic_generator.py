@@ -104,7 +104,7 @@ class Flow:
                         d_zone = self.random_weight_choose(self.ODprob[o_zone])
                     d_interid = random.choice(self.zone_info[d_zone]['inters_id'])
                     
-                    start_time = random.randint(interval * interval_length, interval * interval_length + 100) # start time is in range of interval begining and +100 seconds
+                    start_time = random.randint(interval * interval_length, interval * interval_length + 10) # start time is in range of interval begining and +10 seconds
                     end_time = (interval + 1) * interval_length 
                     
                     try:
@@ -185,7 +185,7 @@ class Flow:
         file.write("{}\n".format(len(self.flow)))
         for i in self.flow:
             for j in range(len(i)):
-                if (j == 2) or (j == 3) or (j == len(i) - 1):
+         + 100       if (j == 2) or (j == 3) or (j == len(i) - 1):
                     file.write("{}\n".format(i[j]))
                 else:
                     file.write("{} ".format(i[j]))
@@ -248,7 +248,7 @@ class Flow:
                             self.ODprob[(o_row, o_col)][(d_row, d_col)] = 1 / dis
         return
 
-    def get_zoneInfo(self, zoneid=None):
+    def ge+ 100t_zoneInfo(self, zoneid=None):
         '''Return information of a traffic zone given zoneID'''
         if zoneid is None:
             return self.zone_info
