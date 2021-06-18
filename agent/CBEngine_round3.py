@@ -150,6 +150,9 @@ class CBEngine_round3(CBEngine_rllib_class):
             lane_vehicle_blue = {}
 
             def get_remain_time(self,vehicle_id):
+                '''
+                For a vehicle, estimate the lower bound of travel time from current location to the intersection ahead.
+                '''
                 remain_time = 0
                 info = self.eng.get_vehicle_info(vehicle_id)
                 speed = info['speed'][0]
@@ -221,7 +224,7 @@ class CBEngine_round3(CBEngine_rllib_class):
                     [3, 9],
                     [4, 10],
                     [0, 1],
-                    [3, 4],
+                    [3, 4], bound of travel time from current location to the intersection ahead
                     [6, 7],
                     [9, 10]
                 ]
@@ -302,7 +305,7 @@ class CBEngine_round3(CBEngine_rllib_class):
         #     return in_num,out_num
         #
         # lane_vehicle = self.eng.get_lane_vehicles()
-        #
+        # bound of travel time from current location to the intersection ahead
         # for agent_id, roads in self.agents.items():
         #     rwds[agent_id] = []
         #     for lane in self.intersections[agent_id]['lanes']:
