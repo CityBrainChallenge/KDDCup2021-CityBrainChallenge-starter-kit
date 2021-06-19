@@ -185,7 +185,7 @@ class Flow:
         file.write("{}\n".format(len(self.flow)))
         for i in self.flow:
             for j in range(len(i)):
-         + 100       if (j == 2) or (j == 3) or (j == len(i) - 1):
+                if (j == 2) or (j == 3) or (j == len(i) - 1):
                     file.write("{}\n".format(i[j]))
                 else:
                     file.write("{} ".format(i[j]))
@@ -248,7 +248,7 @@ class Flow:
                             self.ODprob[(o_row, o_col)][(d_row, d_col)] = 1 / dis
         return
 
-    def ge+ 100t_zoneInfo(self, zoneid=None):
+    def get_zoneInfo(self, zoneid=None):
         '''Return information of a traffic zone given zoneID'''
         if zoneid is None:
             return self.zone_info
