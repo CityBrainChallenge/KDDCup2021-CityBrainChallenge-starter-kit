@@ -224,7 +224,7 @@ class CBEngine_round3(CBEngine_rllib_class):
                     [3, 9],
                     [4, 10],
                     [0, 1],
-                    [3, 4], bound of travel time from current location to the intersection ahead
+                    [3, 4],
                     [6, 7],
                     [9, 10]
                 ]
