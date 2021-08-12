@@ -1,2 +1,2 @@
-The technical reports are on updating.
+The technical reports of top 10 teams are updated.
 
